@@ -1,0 +1,21 @@
+.nav-items ul li {
+  list-style: none;
+  border: 2px solid white;
+  width: 15%;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #847fee;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-items ul li:hover {
+  background-color: #010435;
+}
+
+.project-type a {
+  color: white !important;
+}

@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 30px 10px;
+  background-color: rgb(18, 18, 62);
+}
+
+.nav-items {
+  margin-top: 20px;
+}
+
+.nav-items ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items ul li {
+  margin-right: 20px;
+}

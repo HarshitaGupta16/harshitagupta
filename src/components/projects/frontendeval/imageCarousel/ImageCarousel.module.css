@@ -1,0 +1,49 @@
+.app {
+  background-color: lightblue;
+  height: 75.8vh;
+  width: 96vw;
+  margin: auto;
+}
+
+.title {
+  color: black;
+  margin-left: 40%;
+}
+
+.carousel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+.left i {
+  font-size: 2rem;
+  background-color: rgb(0, 0, 0, 0.76);
+  padding: 12px;
+}
+
+.center {
+  width: 80%;
+}
+
+.right {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right i {
+  font-size: 2rem;
+  background-color: rgb(0, 0, 0, 0.76);
+  padding: 12px;
+}

@@ -1,0 +1,11 @@
+.accordian {
+  padding: 24px;
+  width: 700px;
+  border: 1px solid;
+  color: white;
+}
+
+.accordian-header {
+  display: flex;
+  justify-content: space-between;
+}
