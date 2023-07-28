@@ -37,7 +37,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src="/src/assets/my-pic.png" className={styles.image} />
+          <img src="/assets/my-pic.png" className={styles.image} />
         </div>
       </div>
       <div className={styles.secondContainer}>
