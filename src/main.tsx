@@ -8,12 +8,17 @@ import AppLink from "./components/projects/small-apps/smallApps/AppLink.tsx";
 import BackButton from "./components/common/BackButton.tsx";
 import Frontendeval from "./components/projects/frontendeval/Frontendeval.tsx";
 import FrontendLink from "./components/projects/frontendeval/FrontendLink.tsx";
+import Home from "./components/Home/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/projects",
         element: <Projects />,

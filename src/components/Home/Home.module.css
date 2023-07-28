@@ -1,0 +1,145 @@
+.container {
+  font-size: 3rem;
+  display: flex;
+  /* width: 62%; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.description {
+  /* padding: 50px; */
+  padding-left: 120px;
+}
+.emoji {
+  transform: scale(-1, 1);
+  width: fit-content;
+  display: inline-block;
+  -webkit-animation: moving 5s infinite;
+  animation: moving 5s infinite;
+  position: relative;
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+}
+
+@keyframes moving {
+  0% {
+    transform: rotate(0deg) scale(-1, 1);
+  }
+  10% {
+    transform: rotate(14deg) scale(-1, 1);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg) scale(-1, 1);
+  }
+  30% {
+    transform: rotate(14deg) scale(-1, 1);
+  }
+  40% {
+    transform: rotate(-4deg) scale(-1, 1);
+  }
+  50% {
+    transform: rotate(10deg) scale(-1, 1);
+  }
+  60% {
+    transform: rotate(0deg) scale(-1, 1);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg) scale(-1, 1);
+  }
+}
+/* @keyframes moving {
+  from {
+    transform: translateY(20px) scale(-1, 1);
+  }
+  to {
+    transform: translateY(0px) scale(-1, 1);
+  }
+} */
+
+.image {
+  height: 500px;
+  width: 400px;
+  background: none;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 40px 84px;
+}
+
+.about-box {
+  border: 1px solid #9c97f1;
+  border-radius: 5px;
+  /* height: 200px; */
+  margin-top: 20px;
+  background-color: rgb(245, 192, 123);
+  /* background-color: white; */
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  width: 500px;
+}
+
+.secondContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact {
+  list-style: none;
+  display: flex;
+  margin-left: 220px;
+  border: 1px solid #9c97f1;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(245, 192, 123);
+  align-items: center;
+  justify-content: center;
+}
+
+.contact li:hover {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin-left: -20px;
+    justify-content: center;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 25px !important;
+  }
+  .about-box {
+    margin-left: -20px;
+    font-size: 12px;
+    width: 300px;
+  }
+  .secondContainer {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .secondContainer div:first-child {
+    padding-left: 0 !important;
+  }
+  .secondContainer div:first-child > div {
+    width: 400px !important;
+    flex-wrap: wrap;
+  }
+  .contact {
+    margin-left: 65px;
+    width: fit-content;
+  }
+}

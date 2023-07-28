@@ -6,6 +6,10 @@
   background-color: rgb(18, 18, 62);
 }
 
+.title {
+  color: white;
+}
+
 .nav-items {
   margin-top: 20px;
 }
@@ -19,4 +23,8 @@
 
 .nav-items ul li {
   margin-right: 20px;
+}
+
+.nav-items ul li a:hover {
+  color: #847fee !important;
 }

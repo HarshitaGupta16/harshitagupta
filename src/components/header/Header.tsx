@@ -1,16 +1,38 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 
 const Header = () => {
   return (
     <div className={styles.header}>
-      <h2 className={styles.title}>Harshita's Porfolio</h2>
+      <Link to={"/"}>
+        <h2 className={styles.title}>Harshita Gupta</h2>
+      </Link>
       <div className={styles["nav-items"]}>
         <ul>
-          <li>Home</li>
+          <li>
+            <NavLink
+              to="/"
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "rgb(170, 107, 228)" : "white",
+                };
+              }}
+            >
+              Home
+            </NavLink>
+          </li>
           <li>About</li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <NavLink
+              to="/projects"
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "rgb(170, 107, 228)" : "white",
+                };
+              }}
+            >
+              Projects
+            </NavLink>
           </li>
           <li>Blogs</li>
         </ul>
