@@ -12,6 +12,7 @@ const SmallApps = () => {
             description={app.description}
             id={app.id}
             category="small-apps"
+            mainCategory="projects"
           />
         ))}
       </ul>

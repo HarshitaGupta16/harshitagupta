@@ -21,7 +21,6 @@ const Header = () => {
               Home
             </NavLink>
           </li>
-          <li>About</li>
           <li>
             <NavLink
               to="/projects"
@@ -34,7 +33,18 @@ const Header = () => {
               Projects
             </NavLink>
           </li>
-          <li>Blogs</li>
+          <li>
+            <NavLink
+              to="/blogs"
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "rgb(170, 107, 228)" : "white",
+                };
+              }}
+            >
+              Blogs
+            </NavLink>
+          </li>
         </ul>
       </div>
     </div>

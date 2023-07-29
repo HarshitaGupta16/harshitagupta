@@ -1,0 +1,12 @@
+.wrapper {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.nav-items ul li:hover {
+  background-color: #010435;
+}
+
+.project-type a {
+  color: white !important;
+}

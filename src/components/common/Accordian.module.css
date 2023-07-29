@@ -1,11 +1,53 @@
 .accordian {
   padding: 24px;
-  width: 700px;
-  border: 1px solid;
+  width: 800px;
+  border: 1px solid #9c97f1;
   color: white;
+  margin-top: 20px;
 }
 
 .accordian-header {
   display: flex;
   justify-content: space-between;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  margin: 12px;
+  font-weight: bold;
+}
+
+.blogs-content {
+  display: flex;
+  gap: 15px;
+  white-space: pre-line;
+}
+
+.blogs-content img {
+  height: 135px;
+  width: 200px;
+}
+
+.show-more-link {
+  color: skyblue;
+}
+
+.show-more-link:hover {
+  text-decoration: underline;
+}
+
+.chevron {
+  background-color: inherit !important;
+  font-size: 1.2rem;
+}
+
+.chevron:hover {
+  outline: 1px solid lightblue;
+  border-radius: 50%;
+  padding: 0 15px;
+}
+
+.date {
+  font-size: 12px;
 }

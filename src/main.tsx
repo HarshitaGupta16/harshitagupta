@@ -9,6 +9,7 @@ import BackButton from "./components/common/BackButton.tsx";
 import Frontendeval from "./components/projects/frontendeval/Frontendeval.tsx";
 import FrontendLink from "./components/projects/frontendeval/FrontendLink.tsx";
 import Home from "./components/Home/Home";
+import Blogs from "./components/blogs/Blogs.tsx";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
             <FrontendLink />
           </>
         ),
+      },
+      {
+        path: "blogs/",
+        element: <Blogs />,
       },
     ],
   },

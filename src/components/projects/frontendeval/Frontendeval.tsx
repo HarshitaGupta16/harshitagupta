@@ -12,6 +12,7 @@ const Frontendeval = () => {
             description={project.description}
             id={project.id}
             category="frontendeval"
+            mainCategory="projects"
           ></Accordian>
         );
       })}
