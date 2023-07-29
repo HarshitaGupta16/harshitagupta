@@ -1,3 +1,9 @@
+.nav-items ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav-items ul li {
   list-style: none;
   border: 2px solid white;
@@ -6,7 +12,7 @@
   margin-top: 20px;
   background-color: #847fee;
   color: white;
-  padding: 5px;
+  padding: 5px 15px;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -14,6 +20,7 @@
 
 .nav-items ul li:hover {
   background-color: #010435;
+  padding: 10px 25px;
 }
 
 .project-type a {

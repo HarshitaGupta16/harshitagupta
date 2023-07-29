@@ -10,6 +10,7 @@ import Frontendeval from "./components/projects/frontendeval/Frontendeval.tsx";
 import FrontendLink from "./components/projects/frontendeval/FrontendLink.tsx";
 import Home from "./components/Home/Home";
 import Blogs from "./components/blogs/Blogs.tsx";
+import BigProjects from "./components/projects/big-projects/BigProjects.tsx";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,15 @@ const router = createBrowserRouter([
           <>
             <BackButton />
             <FrontendLink />
+          </>
+        ),
+      },
+      {
+        path: "/projects/big-projects",
+        element: (
+          <>
+            <BackButton />
+            <BigProjects />
           </>
         ),
       },

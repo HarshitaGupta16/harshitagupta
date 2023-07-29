@@ -30,9 +30,15 @@ const Accordian = ({
     <div className={styles.accordian}>
       <div className={styles["accordian-header"]}>
         {mainCategory === "projects" ? (
-          <Link to={`/${mainCategory}/${category}/${id}`}>
-            <div className={styles.title}>{title}</div>
-          </Link>
+          category === "big-projects" && link ? (
+            <Link to={link} target="_blank">
+              <div className={styles.title}>{title}</div>
+            </Link>
+          ) : (
+            <Link to={`/${mainCategory}/${category}/${id}`}>
+              <div className={styles.title}>{title}</div>
+            </Link>
+          )
         ) : (
           <div className={styles.title}>{title}</div>
         )}
@@ -50,7 +56,14 @@ const Accordian = ({
       </div>
       {isOpen &&
         (!image ? (
-          <div>{description}</div>
+          <>
+            {date && (
+              <span className={styles.date} style={{ marginLeft: "10px" }}>
+                {date}
+              </span>
+            )}
+            <div className={styles.description}>{description}</div>
+          </>
         ) : (
           <div className={styles["blogs-content"]}>
             <img src={image} alt={title.split("")[0]} />
