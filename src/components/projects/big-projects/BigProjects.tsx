@@ -3,7 +3,7 @@ import Accordian from "../../common/Accordian";
 
 const BigProjects = () => {
   return (
-    <div>
+    <ul>
       {BigProjectsData.map((project) => {
         return (
           <Accordian
@@ -18,7 +18,7 @@ const BigProjects = () => {
           />
         );
       })}
-    </div>
+    </ul>
   );
 };
 
