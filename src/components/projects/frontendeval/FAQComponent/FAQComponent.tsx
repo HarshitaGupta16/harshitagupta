@@ -14,32 +14,49 @@ const FAQData = [
   },
   {
     id: "ques3",
-    question: "How long do cats live",
+    question: "How long do cats live?",
     answer:
       "Outdoor cats live 5 years on average. Indoor\ncats live 15 years on average.",
   },
 ];
 
-const FAQComponent = () => {
+interface AccordianProps {
+  faqId: string;
+  title: string;
+  body: string;
+}
+
+const Accordian = ({ faqId, title, body }: AccordianProps) => {
   const [open, setOpen] = useState<string | boolean>("ques1" || false);
   const handleChange = (id: string) => {
     setOpen((prevId) => (prevId === id ? false : id));
   };
   return (
+    <div className={styles.accordian} key={faqId}>
+      <div onClick={() => handleChange(faqId)} className={styles.question}>
+        {open === faqId ? (
+          <i className="fa fa-caret-down"></i>
+        ) : (
+          <i className="fa fa-caret-right"></i>
+        )}
+        {title}
+      </div>
+      {open === faqId && <div className={styles.answer}>{body}</div>}
+    </div>
+  );
+};
+
+const FAQComponent = () => {
+  return (
     <div className={styles.container}>
       <h1>Frequestly asked questions</h1>
       {FAQData.map((faq) => (
-        <div className={styles.accordian} key={faq.id}>
-          <div onClick={() => handleChange(faq.id)} className={styles.question}>
-            {open === faq.id ? (
-              <i className="fa fa-caret-down"></i>
-            ) : (
-              <i className="fa fa-caret-right"></i>
-            )}
-            {faq.question}
-          </div>
-          {open === faq.id && <div className={styles.answer}>{faq.answer}</div>}
-        </div>
+        <Accordian
+          key={faq.id}
+          title={faq.question}
+          body={faq.answer}
+          faqId={faq.id}
+        />
       ))}
     </div>
   );
