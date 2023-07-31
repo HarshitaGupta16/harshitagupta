@@ -20,25 +20,6 @@ const FAQData = [
   },
 ];
 
-interface AccordianProps {
-  id: string;
-  title: string;
-  body: string;
-}
-
-const Accordian = ({ id, title, body }: AccordianProps) => {
-  const [open, setOpen] = useState<string | boolean>("ques1" || false);
-  const handleChange = (id: string) => {
-    setOpen(id === id);
-  };
-  return (
-    <div className={styles.accordian}>
-      <div onClick={() => handleChange(id)}>{title}</div>
-      {open && <div>{body}</div>}
-    </div>
-  );
-};
-
 const FAQComponent = () => {
   const [open, setOpen] = useState<string | boolean>("ques1" || false);
   const handleChange = (id: string) => {
@@ -59,12 +40,6 @@ const FAQComponent = () => {
           </div>
           {open === faq.id && <div className={styles.answer}>{faq.answer}</div>}
         </div>
-        // <Accordian
-        //   key={faq.id}
-        //   title={faq.question}
-        //   body={faq.answer}
-        //   id={faq.id}
-        // />
       ))}
     </div>
   );
