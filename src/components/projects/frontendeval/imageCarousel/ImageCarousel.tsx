@@ -25,7 +25,7 @@ const DisplayCarousel = ({ imageData }: ImageProps) => {
   return (
     // <div>
     imageData.length === 0 ? (
-      <span>Loading</span>
+      <span className={styles.spinner}></span>
     ) : (
       <div className={styles.carousel}>
         <div

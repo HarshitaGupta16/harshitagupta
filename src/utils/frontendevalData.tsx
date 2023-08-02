@@ -1,6 +1,7 @@
 import FAQComponent from "../components/projects/frontendeval/FAQComponent/FAQComponent";
 import ImageCarousel from "../components/projects/frontendeval/imageCarousel/ImageCarousel";
 import ModalOverlay from "../components/projects/frontendeval/modalOverlay/ModalOverlay";
+import MyMap from "../components/projects/frontendeval/Array.prototype.map/Array.prototype.map";
 
 export const frontendevalData = [
   {
@@ -26,5 +27,14 @@ export const frontendevalData = [
     component: <ModalOverlay />,
     date: "1 Aug 2023",
     // solved in 1 hour 5 mins with css
+  },
+  {
+    id: "4",
+    title: "myMap Function",
+    description: "This is a dismissible modal overlay built in ReactJS.",
+    component: <MyMap />,
+    date: "1 Aug 2023",
+    // solved in 5:41 - 6:00 that is 19 mins-> code logic completed for map function
+    // connecting with UI 1 hour more then in next 15mins fix UI and not showing result if result length is 0, total time: 1 hour 34 mins
   },
 ];
