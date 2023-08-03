@@ -2,6 +2,7 @@ import FAQComponent from "../components/projects/frontendeval/FAQComponent/FAQCo
 import ImageCarousel from "../components/projects/frontendeval/imageCarousel/ImageCarousel";
 import ModalOverlay from "../components/projects/frontendeval/modalOverlay/ModalOverlay";
 import MyMap from "../components/projects/frontendeval/Array.prototype.map/Array.prototype.map";
+import MortgageCalculator from "../components/projects/frontendeval/mortgageCalculator/MortgageCalculator";
 
 export const frontendevalData = [
   {
@@ -33,8 +34,18 @@ export const frontendevalData = [
     title: "myMap Function",
     description: "This is a dismissible modal overlay built in ReactJS.",
     component: <MyMap />,
-    date: "1 Aug 2023",
+    date: "2 Aug 2023",
     // solved in 5:41 - 6:00 that is 19 mins-> code logic completed for map function
     // connecting with UI 1 hour more then in next 15mins fix UI and not showing result if result length is 0, total time: 1 hour 34 mins
+  },
+  {
+    id: "5",
+    title: "Mortgage Calculator",
+    description:
+      "This is a compound interest calculator built in ReactJS. This accepts Principal, Interest rate\n and Length of loan and calculates mortage amount to be paid monthly.",
+    component: <MortgageCalculator />,
+    date: "3 Aug 2023",
+    // solved in 10:40 - 11:17 and some UI fixes 11:19pm that is 37mins - 39mins and till 11:32-final, 11:37-final, 11:43pm did final changes
+    // 1hour 3mins total , at 11:48-11:49 did heading font-size change
   },
 ];
