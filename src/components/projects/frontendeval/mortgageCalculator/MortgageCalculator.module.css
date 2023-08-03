@@ -13,7 +13,7 @@
 
 .container {
   border: 3px solid black;
-  width: 70vw;
+  width: 45vw;
   height: 65vh;
   margin-top: -10px;
 }
@@ -31,10 +31,11 @@
 }
 
 .form-field input {
-  width: 50%;
+  width: 40%;
   padding: 5px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   border: 2px solid;
+  font-family: "Gochi Hand", cursive;
 }
 
 .calculate {
