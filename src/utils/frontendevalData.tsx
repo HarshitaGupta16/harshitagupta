@@ -3,6 +3,7 @@ import ImageCarousel from "../components/projects/frontendeval/imageCarousel/Ima
 import ModalOverlay from "../components/projects/frontendeval/modalOverlay/ModalOverlay";
 import MyMap from "../components/projects/frontendeval/Array.prototype.map/Array.prototype.map";
 import MortgageCalculator from "../components/projects/frontendeval/mortgageCalculator/MortgageCalculator";
+import DataFetchingHistogram from "../components/projects/frontendeval/histogramWithDataFetching/DataFetchingHistogram";
 
 export const frontendevalData = [
   {
@@ -47,5 +48,15 @@ export const frontendevalData = [
     date: "3 Aug 2023",
     // solved in 10:40 - 11:17 and some UI fixes 11:19pm that is 37mins - 39mins and till 11:32-final, 11:37-final, 11:43pm did final changes
     // 1hour 3mins total , at 11:48-11:49 did heading font-size change
+  },
+  {
+    id: "6",
+    title: "Data fetching and Visualization",
+    description:
+      "In this practical exercise, need to retrieve list of numbers from an endpoint and plot histogram showing the frequency of each number in the list using ReactJS.",
+    component: <DataFetchingHistogram />,
+    date: "4 Aug 2023 - 5 Aug 2023",
+    // solved in 10:20 - 12:16 that is 1 hour 56mins then till 12:31 - fixed 1 error of getting extra datapoint on x-axis
+    // till 1:50 added toggle dark light mode functionality and css fixes. commiting changes at 2:19
   },
 ];
