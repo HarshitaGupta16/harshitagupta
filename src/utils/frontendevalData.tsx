@@ -4,6 +4,7 @@ import ModalOverlay from "../components/projects/frontendeval/modalOverlay/Modal
 import MyMap from "../components/projects/frontendeval/Array.prototype.map/Array.prototype.map";
 import MortgageCalculator from "../components/projects/frontendeval/mortgageCalculator/MortgageCalculator";
 import DataFetchingHistogram from "../components/projects/frontendeval/histogramWithDataFetching/DataFetchingHistogram";
+import MultiStepForm from "../components/projects/frontendeval/multi-step form/MultiStepForm";
 
 export const frontendevalData = [
   {
@@ -58,5 +59,14 @@ export const frontendevalData = [
     date: "4 Aug 2023 - 5 Aug 2023",
     // solved in 10:20 - 12:16 that is 1 hour 56mins then till 12:31 - fixed 1 error of getting extra datapoint on x-axis
     // till 1:50 added toggle dark light mode functionality and css fixes. commiting changes at 2:19
+  },
+  {
+    id: "7",
+    title: "Multi-step form",
+    description:
+      "This is a multiple screen form built in ReactJS that takes user's name, email, DOB, password on\n separate screens.",
+    component: <MultiStepForm />,
+    date: "5 Aug 2023 - 6th Aug 2023",
+    // solved in 9:41pm to 10pm and then 11:09 to 12:46 (1hr 54mins) then till 1:15 a.m made it responsive for mobile view so total time (2hrs 23 mins)
   },
 ];
